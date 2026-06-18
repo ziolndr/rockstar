@@ -1,1 +1,76 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <title>ROCKSTAR — Official Trailer</title>
+  <meta name="description" content="ROCKSTAR is a 2:27 cinematic trailer / short film about recurrence, identity, and the strange horror of finding yourself. Created by Joel Trout II / Actual General Intelligence, Inc." />
+  <meta property="og:title" content="ROCKSTAR — Official Trailer" />
+  <meta property="og:description" content="A stone is found. A swimmer enters the sea. Something returns." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-rockstar.jpg" />
+  <style>
+    :root {
+      --bg:#050505; --fg:#ece9e1; --muted:rgba(236,233,225,.66);
+      --faint:rgba(236,233,225,.34); --line:rgba(236,233,225,.13);
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{background:var(--bg);color:var(--fg);font-family:Georgia,"Times New Roman",serif;scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 8%,rgba(255,255,255,.10),transparent 26rem),radial-gradient(circle at 70% 54%,rgba(142,15,15,.08),transparent 34rem),linear-gradient(180deg,#070707 0%,#020202 100%);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;background:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0,rgba(255,255,255,.028) 1px,transparent 1px,transparent 4px);mix-blend-mode:overlay;opacity:.45}
+    body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:21;background:radial-gradient(circle at center,transparent 38%,rgba(0,0,0,.78) 100%)}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(calc(100% - 32px),var(--max));margin:0 auto}
+    header{position:fixed;top:0;left:0;right:0;z-index:30;padding:18px 0;background:linear-gradient(180deg,rgba(0,0,0,.72),rgba(0,0,0,0));backdrop-filter:blur(2px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:10px;color:var(--muted)}
+    .mark{color:var(--fg);letter-spacing:.28em}.nav-links{display:flex;gap:18px;align-items:center}.nav-links a{opacity:.74;transition:opacity .18s}.nav-links a:hover{opacity:1}
+    main{position:relative;z-index:2}.hero{min-height:100svh;display:grid;align-items:center;padding:96px 0 48px}.hero-grid{display:grid;grid-template-columns:.9fr 1.6fr;gap:clamp(28px,5vw,72px);align-items:center}
+    .kicker{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--muted);margin:0 0 22px}
+    h1{font-size:clamp(64px,11vw,150px);line-height:.78;letter-spacing:-.075em;font-weight:500;margin:0;text-transform:uppercase}
+    .tagline{max-width:500px;margin:30px 0 0;font-size:clamp(20px,2.3vw,34px);line-height:1.04;letter-spacing:-.04em}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--muted)}
+    .meta span{border:1px solid var(--line);padding:8px 10px;background:rgba(255,255,255,.025)}
+    .trailer-shell{position:relative;border:1px solid var(--line);background:#000;box-shadow:0 34px 90px rgba(0,0,0,.72);overflow:hidden}
+    .trailer-shell:before{content:"FIELD PLAYBACK";position:absolute;top:13px;left:15px;z-index:4;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.18em;font-size:9px;color:rgba(255,255,255,.55);pointer-events:none}
+    .trailer-shell:after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(circle at center,transparent 58%,rgba(0,0,0,.36) 100%)}
+    .embed{position:relative;aspect-ratio:16/9;width:100%} iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+    .play-placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 36%),#050505;color:var(--muted);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:10px}
+    .play-placeholder strong{display:block;color:var(--fg);font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,7vw,96px);letter-spacing:-.075em;line-height:.85;margin-bottom:16px}
+    section{padding:78px 0;border-top:1px solid var(--line)}.two-col{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(28px,5vw,74px);align-items:start}
+    .section-label{margin:0;color:var(--faint);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:10px}
+    .copy{font-size:clamp(25px,3.8vw,58px);line-height:.98;letter-spacing:-.055em;margin:0}.small-copy{margin:24px 0 0;max-width:760px;color:var(--muted);font-size:clamp(16px,1.6vw,21px);line-height:1.35;letter-spacing:-.015em}
+    .artifact-lines{display:grid;gap:12px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted)}
+    .artifact-lines div{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:18px}.artifact-lines b{color:var(--fg);font-weight:500;text-align:right}
+    footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--faint);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:10px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:840px){header{position:absolute}.nav-links{display:none}.hero{padding-top:82px}.hero-grid,.two-col{grid-template-columns:1fr}section{padding:54px 0}.artifact-lines div{display:grid;gap:6px}.artifact-lines b{text-align:left}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav"><a class="mark" href="#">ROCKSTAR</a><nav class="nav-links" aria-label="Primary"><a href="#trailer">Trailer</a><a href="#field">Field Note</a><a href="#credits">Credits</a></nav></div></header>
+  <main>
+    <section class="hero" id="trailer">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker">Actual General Intelligence, Inc. Field Archive</p>
+          <h1>ROCK<br>STAR</h1>
+          <p class="tagline">You pick it up. You take it home. You forget. It remembers.</p>
+          <div class="meta"><span>Official Trailer</span><span>02:27</span><span>La Jolla, CA</span></div>
+        </div>
+        <div class="trailer-shell">
+          <div class="embed">
+            <!-- Replace src with YouTube embed URL, then delete the placeholder div below.
+                 Example: https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1 -->
+            <iframe src="" title="ROCKSTAR Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="play-placeholder"><div><strong>ROCKSTAR</strong>Trailer embed pending</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="field"><div class="wrap two-col"><p class="section-label">Field Note</p><div><p class="copy">A stone is found. A swimmer enters the sea. Something returns.</p><p class="small-copy">ROCKSTAR is a cinematic trailer / short film about recurrence, identity, and the strange horror of finding yourself.</p></div></div></section>
+    <section id="credits"><div class="wrap two-col"><p class="section-label">Artifact</p><div class="artifact-lines"><div><span>Title</span><b>ROCKSTAR</b></div><div><span>Format</span><b>Cinematic Trailer / Short Film</b></div><div><span>Runtime</span><b>02:27</b></div><div><span>Created By</span><b>Joel Trout II</b></div><div><span>Company</span><b>Actual General Intelligence, Inc.</b></div><div><span>Location</span><b>La Jolla, California</b></div></div></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© Actual General Intelligence, Inc.</span><span>Field Archive // ROCKSTAR</span></div></footer>
+</body>
+</html>
